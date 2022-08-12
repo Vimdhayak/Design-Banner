@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.rotate{
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    transform: translate(-50%,50%);
+    border: 2px solid black;
+}
+.banner{
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+.banner img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    background-color: whitesmoke;
+    
+}
+.rotate:hover > .banner{
+    transform: rotate(360deg);
+    background-color: aquamarine;
+}

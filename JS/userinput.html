@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taking input from user</title>
+</head>
+
+<body>
+    <script>
+        // prompt("What's Your Name: ");
+        // confirm("You Sure??");
+        // alert("OK");
+
+
+        // var value = Number(prompt("Enter Total Amount: "));
+        // var x = value;
+        // if (value <= 20000 && value > 0)
+        //     value *= 0.95;
+        // else if (value > 20000 && value <= 80000)
+        //     value *= 0.9;
+        // else if (value > 80000)
+        //     value *= 0.85;
+        // else
+        //     document.write("Error!! Please visit the Branch Manager for more details.<br />");
+
+        // document.write("Hello ABC, Welcome to iDestiny Apple Store<br />");
+        // document.write("The Total shopped amount is: " + x + "<br />");
+        // document.write("Discount: " + (x - value) + "<br />");
+        // document.write("Net Payble amount is: " + value+"<br />");
+        // document.write("Offer!! Buy iPhone get a Mac Free!!!");
+        var id = Number(prompt("Enter the id number: "));
+        var ok=confirm("Are You Sure About That!!!");
+        if(ok){
+            switch (id) {
+            case 1:
+                alert("Welcome Admin");
+                break;
+            case 2:
+                alert("Welcome HR");
+                break;
+            case 3:
+                alert("Welcome IT");
+                break;
+            default:
+                alert("Wrong ID!! Enter Valid ID!!!");
+                break;
+        }
+        }
+        else{
+            alert("Try again");
+            document.location.reload(true);
+        }
+    </script>
+</body>
+
+</html>

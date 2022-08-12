@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.gallery{
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+.gallery .heading{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.gallery .heading h1{
+    font-size: 50px;
+    border-bottom: 5px solid #000;
+    padding-bottom: 10px;
+}
+.gallery .heading h1 span{
+    font-weight: 100;
+}
+.row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery-col{
+    flex-basis: 32.5%;
+}
+.gallery-col img{
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}

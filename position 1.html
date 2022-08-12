@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .static{
+        background: #f00;
+        color: #fff;
+        padding: 10px;
+        font-family: sans-serif;
+    }
+
+    .Sticky{
+        position: Sticky;
+        width: 250px;
+        padding: 15px;
+        font-size: 15px;
+        top: 0;
+        left: 250px;
+        border: 1px solid #000; 
+    }
+
+    .relative{
+        position: relative;
+        top: 150px;
+        left: 150px;
+        border: 1px solid #0f0;
+        padding: 15px;
+        width: 50%;
+        height: 1000px; 
+    }
+
+    .absolute{
+        position: absolute;
+        width: 250px;
+        height: 150px;
+        background: #c0c0c0;
+        top: 400px;
+        right: 50px;
+    }
+
+    .fixed{
+        position: fixed;
+        width: 200px;
+        height: 150px;
+        background: #00f;
+        top: 0;
+        left: 0;
+        z-index: -10;
+    }
+</style>
+</head>
+<body>
+    <div class="static">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore modi placeat omnis vero eveniet vitae. Pariatur repellendus nisi reiciendis eius?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore modi placeat omnis vero eveniet vitae. Pariatur repellendus nisi reiciendis eius?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore modi placeat omnis vero eveniet vitae. Pariatur repellendus nisi reiciendis eius?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore modi placeat omnis vero eveniet vitae. Pariatur repellendus nisi reiciendis eius?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore modi placeat omnis vero eveniet vitae.</p>
+    </div>
+    <div class="Sticky">
+    <p>I am in sticky</p>
+    </div>
+    <div class="relative">
+        <p>This is relative position</p>
+        <div class="absolute"></div>
+    </div>
+    <div class="fixed"></div>
+</body>
+</html>
